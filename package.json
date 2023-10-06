@@ -1,0 +1,39 @@
+{
+  "name": "fulltimeforce-test",
+  "version": "1.0.0",
+  "description": "\"fulltimeforce app test project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "start": "node apps/backend/dist/main.js",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "tsconfig": "*",
+    "turbo": "^1.10.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpulido/fulltimeforce-test.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "next",
+    "react"
+  ],
+  "author": "\"Wistremiro Pulido\"",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/wpulido/fulltimeforce-test/issues"
+  },
+  "homepage": "https://github.com/wpulido/fulltimeforce-test#readme"
+}
