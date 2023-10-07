@@ -10,6 +10,7 @@ import { OctokitModule } from 'nestjs-octokit';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '../../', 'frontend/dist'),
     }),
+    // We declare our OctokitModule in the imports to enable it for the whole application, adding the isGlobal rule and set it to "true". In this case we do not need auth since the repository we're going to fetch is public
     OctokitModule.forRoot({
       isGlobal: true,
     }),
